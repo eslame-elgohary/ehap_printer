@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FATORA" targetNamespace="http://tempuri.org/FATORA.xsd" xmlns:mstns="http://tempuri.org/FATORA.xsd" xmlns="http://tempuri.org/FATORA.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="sqlconn1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="sqlconn1 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ALKARMA_PRINTER.My.MySettings.GlobalReference.Default.sqlconn1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="FATORA_VTableAdapter" GeneratorDataComponentClassName="FATORA_VTableAdapter" Name="FATORA_V" UserDataComponentName="FATORA_VTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="sqlconn1 (MySettings)" DbObjectName="EHAB_KARMASOFT.dbo.FATORA_V" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        FATORA_V.*
+FROM            FATORA_V</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CUST_NAME" DataSetColumn="CUST_NAME" />
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="CODE_FATO" DataSetColumn="CODE_FATO" />
+              <Mapping SourceColumn="CODE_NUM" DataSetColumn="CODE_NUM" />
+              <Mapping SourceColumn="DATE_FATO" DataSetColumn="DATE_FATO" />
+              <Mapping SourceColumn="CUST_CODE" DataSetColumn="CUST_CODE" />
+              <Mapping SourceColumn="MONY_FATO" DataSetColumn="MONY_FATO" />
+              <Mapping SourceColumn="MONY_AR_FATO" DataSetColumn="MONY_AR_FATO" />
+              <Mapping SourceColumn="TYPE_FATO" DataSetColumn="TYPE_FATO" />
+              <Mapping SourceColumn="STAT_FATO" DataSetColumn="STAT_FATO" />
+              <Mapping SourceColumn="ADD_NAME" DataSetColumn="ADD_NAME" />
+              <Mapping SourceColumn="ADD_DATE" DataSetColumn="ADD_DATE" />
+              <Mapping SourceColumn="ADD_TIME" DataSetColumn="ADD_TIME" />
+              <Mapping SourceColumn="EDIT_NAME" DataSetColumn="EDIT_NAME" />
+              <Mapping SourceColumn="EDIT_DATE" DataSetColumn="EDIT_DATE" />
+              <Mapping SourceColumn="EDIT_TIME" DataSetColumn="EDIT_TIME" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FATORA" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="FATORA" msprop:Generator_UserDSName="FATORA">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FATORA_V" msprop:Generator_TableClassName="FATORA_VDataTable" msprop:Generator_TableVarName="tableFATORA_V" msprop:Generator_TablePropName="FATORA_V" msprop:Generator_RowDeletingName="FATORA_VRowDeleting" msprop:Generator_RowChangingName="FATORA_VRowChanging" msprop:Generator_RowEvHandlerName="FATORA_VRowChangeEventHandler" msprop:Generator_RowDeletedName="FATORA_VRowDeleted" msprop:Generator_UserTableName="FATORA_V" msprop:Generator_RowChangedName="FATORA_VRowChanged" msprop:Generator_RowEvArgName="FATORA_VRowChangeEvent" msprop:Generator_RowClassName="FATORA_VRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CUST_NAME" msprop:Generator_ColumnVarNameInTable="columnCUST_NAME" msprop:Generator_ColumnPropNameInRow="CUST_NAME" msprop:Generator_ColumnPropNameInTable="CUST_NAMEColumn" msprop:Generator_UserColumnName="CUST_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="CODE_FATO" msprop:Generator_ColumnVarNameInTable="columnCODE_FATO" msprop:Generator_ColumnPropNameInRow="CODE_FATO" msprop:Generator_ColumnPropNameInTable="CODE_FATOColumn" msprop:Generator_UserColumnName="CODE_FATO" type="xs:int" minOccurs="0" />
+              <xs:element name="CODE_NUM" msprop:Generator_ColumnVarNameInTable="columnCODE_NUM" msprop:Generator_ColumnPropNameInRow="CODE_NUM" msprop:Generator_ColumnPropNameInTable="CODE_NUMColumn" msprop:Generator_UserColumnName="CODE_NUM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATE_FATO" msprop:Generator_ColumnVarNameInTable="columnDATE_FATO" msprop:Generator_ColumnPropNameInRow="DATE_FATO" msprop:Generator_ColumnPropNameInTable="DATE_FATOColumn" msprop:Generator_UserColumnName="DATE_FATO" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CUST_CODE" msprop:Generator_ColumnVarNameInTable="columnCUST_CODE" msprop:Generator_ColumnPropNameInRow="CUST_CODE" msprop:Generator_ColumnPropNameInTable="CUST_CODEColumn" msprop:Generator_UserColumnName="CUST_CODE" type="xs:int" minOccurs="0" />
+              <xs:element name="MONY_FATO" msprop:Generator_ColumnVarNameInTable="columnMONY_FATO" msprop:Generator_ColumnPropNameInRow="MONY_FATO" msprop:Generator_ColumnPropNameInTable="MONY_FATOColumn" msprop:Generator_UserColumnName="MONY_FATO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MONY_AR_FATO" msprop:Generator_ColumnVarNameInTable="columnMONY_AR_FATO" msprop:Generator_ColumnPropNameInRow="MONY_AR_FATO" msprop:Generator_ColumnPropNameInTable="MONY_AR_FATOColumn" msprop:Generator_UserColumnName="MONY_AR_FATO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TYPE_FATO" msprop:Generator_ColumnVarNameInTable="columnTYPE_FATO" msprop:Generator_ColumnPropNameInRow="TYPE_FATO" msprop:Generator_ColumnPropNameInTable="TYPE_FATOColumn" msprop:Generator_UserColumnName="TYPE_FATO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STAT_FATO" msprop:Generator_ColumnVarNameInTable="columnSTAT_FATO" msprop:Generator_ColumnPropNameInRow="STAT_FATO" msprop:Generator_ColumnPropNameInTable="STAT_FATOColumn" msprop:Generator_UserColumnName="STAT_FATO" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ADD_NAME" msprop:Generator_ColumnVarNameInTable="columnADD_NAME" msprop:Generator_ColumnPropNameInRow="ADD_NAME" msprop:Generator_ColumnPropNameInTable="ADD_NAMEColumn" msprop:Generator_UserColumnName="ADD_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ADD_DATE" msprop:Generator_ColumnVarNameInTable="columnADD_DATE" msprop:Generator_ColumnPropNameInRow="ADD_DATE" msprop:Generator_ColumnPropNameInTable="ADD_DATEColumn" msprop:Generator_UserColumnName="ADD_DATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ADD_TIME" msprop:Generator_ColumnVarNameInTable="columnADD_TIME" msprop:Generator_ColumnPropNameInRow="ADD_TIME" msprop:Generator_ColumnPropNameInTable="ADD_TIMEColumn" msprop:Generator_UserColumnName="ADD_TIME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EDIT_NAME" msprop:Generator_ColumnVarNameInTable="columnEDIT_NAME" msprop:Generator_ColumnPropNameInRow="EDIT_NAME" msprop:Generator_ColumnPropNameInTable="EDIT_NAMEColumn" msprop:Generator_UserColumnName="EDIT_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EDIT_DATE" msprop:Generator_ColumnVarNameInTable="columnEDIT_DATE" msprop:Generator_ColumnPropNameInRow="EDIT_DATE" msprop:Generator_ColumnPropNameInTable="EDIT_DATEColumn" msprop:Generator_UserColumnName="EDIT_DATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EDIT_TIME" msprop:Generator_ColumnVarNameInTable="columnEDIT_TIME" msprop:Generator_ColumnPropNameInRow="EDIT_TIME" msprop:Generator_ColumnPropNameInTable="EDIT_TIMEColumn" msprop:Generator_UserColumnName="EDIT_TIME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FATORA_V" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
